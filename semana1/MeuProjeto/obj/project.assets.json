@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/manoel-jesus-patrocinio/.nuget/packages/": {}
+    "/home/manoel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/manoel-jesus-patrocinio/Documentos/manoel-patrocinio/Trilha_DotNet_Manoel/semana1/MeuProjeto/MeuProjeto.csproj",
+      "projectUniqueName": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana1/MeuProjeto/MeuProjeto.csproj",
       "projectName": "MeuProjeto",
-      "projectPath": "/home/manoel-jesus-patrocinio/Documentos/manoel-patrocinio/Trilha_DotNet_Manoel/semana1/MeuProjeto/MeuProjeto.csproj",
-      "packagesPath": "/home/manoel-jesus-patrocinio/.nuget/packages/",
-      "outputPath": "/home/manoel-jesus-patrocinio/Documentos/manoel-patrocinio/Trilha_DotNet_Manoel/semana1/MeuProjeto/obj/",
+      "projectPath": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana1/MeuProjeto/MeuProjeto.csproj",
+      "packagesPath": "/home/manoel/.nuget/packages/",
+      "outputPath": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana1/MeuProjeto/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/manoel-jesus-patrocinio/.nuget/NuGet/NuGet.Config"
+        "/home/manoel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
