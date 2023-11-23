@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = pratica2
-build_property.ProjectDir = /home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana2/pratica2/
+build_property.RootNamespace = aula23_11
+build_property.ProjectDir = /home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/
