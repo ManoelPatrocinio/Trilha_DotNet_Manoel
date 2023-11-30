@@ -87,10 +87,11 @@ namespace Application
 
             try
             {
-                Advogado advogado1 = new Advogado("manoel", DateTime.Parse("1999/07/19"), "0000000000", "0938595");
-                Console.WriteLine($"Nome: {advogado1.Nome} \n tm: {advogado1.CPF.Length}CPF: {advogado1.CPF}\nCNA:{advogado1.CNA}\n Data NAscimento:{advogado1.DataNasc}");
-                Cliente cliente1 = new Cliente("Sandra", DateTime.Parse("2005/10/20"), "00000000002", "solteiro", "gamer");
-                Console.WriteLine($"Nome: {cliente1.Nome} \nCPF: {cliente1.CPF}\n Data NAscimento:{cliente1.DataNasc}\nEstado Civil:{cliente1.EstadoCivil}\nProfissão:{cliente1.Profissao}");
+                Advogado advogado1 = new Advogado("Manoel", DateTime.Parse("1999/07/19"), "00000000001", "0938595");
+                Advogado advogado2 = new Advogado("Luiza", DateTime.Parse("1975/07/19"), "00000000002", "309430");
+
+                Cliente cliente1 = new Cliente("Sandra", DateTime.Parse("2002/10/20"), "00000000003", "solteiro", "gamer");
+                Cliente cliente2 = new Cliente("Pedro", DateTime.Parse("1972/10/20"), "00000000004", "casado", "reporter");
 
             }
             catch (System.Exception)
@@ -99,6 +100,24 @@ namespace Application
                 return;
             }
 
+            List<Advogado> listAdvogados;
+            List<Cliente> listCliente;
+
+            listAdvogados.Add(advogado1);
+            listAdvogados.Add(advogado2);
+
+            listCliente.Add(cliente1);
+            listCliente.Add(cliente1);
+
+            foreach (var advogado in listAdvogados)
+            {
+
+                ($"Nome: {advogado.Nome} \n tm: {advogado.CPF.Length}CPF: {advogado.CPF}\nCNA:{advogado.CNA}\n Data NAscimento:{advogado.DataNasc}");
+            }
+            foreach (var cliente in listClient){
+
+                Console.WriteLine($"Nome: {cliente.Nome} \nCPF: {cliente.CPF}\n Data NAscimento:{cliente.DataNasc}\nEstado Civil:{cliente.EstadoCivil}\nProfissão:{cliente.Profissao}");
+            }
 
         }
     }
