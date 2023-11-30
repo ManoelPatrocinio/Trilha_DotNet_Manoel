@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/manoel-jesus-patrocinio/.nuget/packages/": {}
+    "/home/manoel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana2/pratica2/pratica2.csproj",
+      "projectUniqueName": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana2/pratica2/pratica2.csproj",
       "projectName": "pratica2",
-      "projectPath": "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana2/pratica2/pratica2.csproj",
-      "packagesPath": "/home/manoel-jesus-patrocinio/.nuget/packages/",
-      "outputPath": "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana2/pratica2/obj/",
+      "projectPath": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana2/pratica2/pratica2.csproj",
+      "packagesPath": "/home/manoel/.nuget/packages/",
+      "outputPath": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana2/pratica2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/manoel-jesus-patrocinio/.nuget/NuGet/NuGet.Config"
+        "/home/manoel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

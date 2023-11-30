@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj": {}
+    "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj": {}
   },
   "projects": {
-    "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj": {
+    "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj",
+        "projectUniqueName": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj",
         "projectName": "aula23_11",
-        "projectPath": "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj",
-        "packagesPath": "/home/manoel-jesus-patrocinio/.nuget/packages/",
-        "outputPath": "/home/manoel-jesus-patrocinio/Documentos/Manoel/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/obj/",
+        "projectPath": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/aula23_11.csproj",
+        "packagesPath": "/home/manoel/.nuget/packages/",
+        "outputPath": "/home/manoel/Documentos/Projetos/Trilha_DotNet_Manoel/semana3/atvEmSala/aula23_11/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/manoel-jesus-patrocinio/.nuget/NuGet/NuGet.Config"
+          "/home/manoel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

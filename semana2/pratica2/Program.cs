@@ -10,7 +10,6 @@ public class AutoIncrement
         return currentID;
     }
 }
-// How to generate a auto increment id in c# ?
 public class TodoItem
 {
     public int Id { get; set; }
