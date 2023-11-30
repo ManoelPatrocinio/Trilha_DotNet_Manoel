@@ -1,13 +1,12 @@
 ﻿
-public class Advogado
+public class Pessoa
 {
 
-    public Advogado(string _nome, DateTime _dataNasc, string _CPF, string _CNA)
+    public Pessoa(string _nome, DateTime _dataNasc, string _CPF)
     {
         Nome = _nome;
         DataNasc = _dataNasc;
         CPF = _CPF;
-        CNA = _CNA;
     }
 
     public string Nome { get; set; }
@@ -18,6 +17,31 @@ public class Advogado
 }
 
 
+public class Advogado : Pessoa
+{
+
+    public Advogado(string _CNA)
+    {
+        CNA = _CNA;
+    }
+
+    public string CNA { get; set; }
+
+}
+public class Cliente : Pessoa
+{
+
+    public Advogado(string _estadoCivil, string _profissao)
+    {
+        EstadoCivil = _estadoCivil;
+        Profissao = _profissao;
+    }
+
+    public string EstadoCivil { get; set; }
+    public string Profissao { get; set; }
+
+}
+
 
 namespace Application
 {
@@ -27,8 +51,10 @@ namespace Application
         static void Main(string[] args)
         {
             Advogado advogado1 = new Advogado("manoel", DateTime.Parse("1999/07/19"), "00000000001", "0938595");
-
             Console.WriteLine($"Nome: {advogado1.Nome} \nCPF: {advogado1.CPF}\nCNA:{advogado1.CNA}\n Data NAscimento:{advogado1.DataNasc}");
+
+            Cliente cliente1 = new Cliente("Sandra", DateTime.Parse("2005/10/20"), "00000000002", "solteiro","gamer");
+            Console.WriteLine($"Nome: {cliente1.Nome} \nCPF: {cliente1.CPF}\nCNA:{cliente1.}\n Data NAscimento:{cliente1.DataNasc}\nEstado Civil:{cliente1.EstadoCivil}\nProfissão:{cliente1.Profissao}");
 
         }
     }
