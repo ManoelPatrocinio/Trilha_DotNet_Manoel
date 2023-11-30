@@ -12,7 +12,6 @@ public class Pessoa
     public string Nome { get; set; }
     public DateTime DataNasc { get; set; }
     public string CPF { get; set; }
-    public string CNA { get; set; }
 
 }
 
@@ -20,8 +19,11 @@ public class Pessoa
 public class Advogado : Pessoa
 {
 
-    public Advogado(string _CNA)
+    public Advogado(string _nome, DateTime _dataNasc, string _CPF,string _CNA)
     {
+        Nome = _nome;
+        DataNasc = _dataNasc;
+        CPF = _CPF;
         CNA = _CNA;
     }
 
@@ -31,8 +33,11 @@ public class Advogado : Pessoa
 public class Cliente : Pessoa
 {
 
-    public Advogado(string _estadoCivil, string _profissao)
+    public Cliente(string _nome, DateTime _dataNasc, string _CPF,string _estadoCivil, string _profissao)
     {
+        Nome = _nome;
+        DataNasc = _dataNasc;
+        CPF = _CPF;
         EstadoCivil = _estadoCivil;
         Profissao = _profissao;
     }
