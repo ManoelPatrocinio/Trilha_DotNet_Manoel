@@ -108,15 +108,14 @@ namespace Application
             foreach (var advogado in listAdvogados)
             {
 
-                Console.WriteLine($"Nome: {advogado.Nome} \nCPF: {advogado.CPF}\nCNA:{advogado.CNA}\nData NAscimento:{advogado.DataNasc} \n\n");
+                Console.WriteLine($"Nome: {advogado.Nome} \nCPF: {advogado.CPF}\nCNA:{advogado.CNA}\nData Nascimento: {advogado.DataNasc} \n\n");
             }
 
             Console.WriteLine("\n\n---Lista de Clientes ---\n\n");
 
             foreach (var cliente in listCliente)
             {
-
-                Console.WriteLine($"Nome: {cliente.Nome} \nCPF: {cliente.CPF}\nData NAscimento:{cliente.DataNasc}\nEstado Civil:{cliente.EstadoCivil}\nProfissão:{cliente.Profissao} \n\n");
+                Console.WriteLine($"Nome: {cliente.Nome} \nCPF: {cliente.CPF}\nData Nascimento: {cliente.DataNasc}\nEstado Civil:{cliente.EstadoCivil}\nProfissão:{cliente.Profissao} \n\n");
             }
 
         }
