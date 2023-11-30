@@ -11,7 +11,19 @@ public class Pessoa
 
     public string Nome { get; set; }
     public DateTime DataNasc { get; set; }
-    public string CPF { get; set; }
+    private string CPF;
+
+    public string _CPF{
+        get {return _CPF }
+
+        set{
+            if(_CPF.Length < 11){
+                throw new Exception("O CPF precisa ter no mínimo 11 dígitos");
+            }
+        }
+    }
+
+
 
 }
 
@@ -19,11 +31,9 @@ public class Pessoa
 public class Advogado : Pessoa
 {
 
-    public Advogado(string _nome, DateTime _dataNasc, string _CPF,string _CNA)
+    public Advogado(string _nome, DateTime _dataNasc, string _CPF,string _CNA):base (_nome,_dataNasc,_CPF)
     {
-        Nome = _nome;
-        DataNasc = _dataNasc;
-        CPF = _CPF;
+        
         CNA = _CNA;
     }
 
@@ -33,11 +43,9 @@ public class Advogado : Pessoa
 public class Cliente : Pessoa
 {
 
-    public Cliente(string _nome, DateTime _dataNasc, string _CPF,string _estadoCivil, string _profissao)
+    public Cliente(string _nome, DateTime _dataNasc, string _CPF,string _estadoCivil, string _profissao):base (_nome,_dataNasc,_CPF)
     {
-        Nome = _nome;
-        DataNasc = _dataNasc;
-        CPF = _CPF;
+       
         EstadoCivil = _estadoCivil;
         Profissao = _profissao;
     }
