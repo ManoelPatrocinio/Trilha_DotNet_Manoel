@@ -1,16 +1,19 @@
-﻿public class Advogado
+﻿using System.Globalization;
+CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("pt-BR");
+
+public class Advogado
 {
 
-    public Advogado(string _nome, int _dataNasc, string _cor)
+    public Advogado(string _nome, DateTime _dataNasc, string _CPF,string _CNA)
     {
-         = _model;
-        Ano = _ano;
-        cor = _cor;
-        IdadeVeiculo = 
+        Nome = _nome;
+        DataNasc = _dataNasc;
+        CPF = _CPF;
+        CNA = _CNA;
     }
 
     public string Nome { get; set; }
-    public Date DataNasc { get; set; }
+    public DateTime DataNasc { get; set; }
     public string CPF { get; set; }
     public string CNA { get;set }
 
@@ -27,6 +30,9 @@ namespace Application
        
         static void Main(string[] args)
         {
+            Advogado advogado1 = new Advogado("manoel","17/07/199", "00000000001","0938595");
+
+            Console.WriteLine($"{advogado1.Nome}, {advogado1.CPF},{advogado1.DataNasc},{advogado1.CNA}");
         }
     }
 }
