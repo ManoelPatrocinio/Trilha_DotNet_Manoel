@@ -212,9 +212,9 @@ public class Stock
                 Console.WriteLine("Informe a quantidade maxima: ");
                 int _max = int.Parse(Console.ReadLine());
 
-                var _result = _productList.Where(tuple => tuple.qtdStock < _min && tuple.qtdStock < _max).ToList();
+                var _result = _productList.Where(tuple => tuple.qtdStock >= _min && tuple.qtdStock <= _max).ToList();
 
-                Console.WriteLine($"\n\nProdutos com estoque entre{_min} e {_max} \n\n");
+                Console.WriteLine($"\n\nProdutos com estoque entre {_min} e {_max} \n\n");
 
                 foreach (var item in _result)
                 {
