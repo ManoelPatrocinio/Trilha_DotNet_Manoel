@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("pt-BR");
-
+﻿
 public class Advogado
 {
 
@@ -26,15 +24,11 @@ namespace Application
 
     class Program
     {
-
-
         static void Main(string[] args)
         {
-            DateTime birthDate = DateTime.Parse("17/07/1999");
-            Advogado advogado1 = new Advogado("manoel", birthDate, "00000000001", "0938595");
+            Advogado advogado1 = new Advogado("manoel", DateTime.Parse("1999/07/19"), "00000000001", "0938595");
 
-            // Console.WriteLine($"{advogado1.Nome}, {advogado1.CPF},{advogado1.DataNasc},{advogado1.CNA}");
-            Console.WriteLine("Modelo");
+            Console.WriteLine($"Nome: {advogado1.Nome} \nCPF: {advogado1.CPF}\nCNA:{advogado1.CNA}\n Data NAscimento:{advogado1.DataNasc}");
 
         }
     }
