@@ -54,7 +54,7 @@ namespace Application
             Console.WriteLine($"Nome: {advogado1.Nome} \nCPF: {advogado1.CPF}\nCNA:{advogado1.CNA}\n Data NAscimento:{advogado1.DataNasc}");
 
             Cliente cliente1 = new Cliente("Sandra", DateTime.Parse("2005/10/20"), "00000000002", "solteiro","gamer");
-            Console.WriteLine($"Nome: {cliente1.Nome} \nCPF: {cliente1.CPF}\nCNA:{cliente1.}\n Data NAscimento:{cliente1.DataNasc}\nEstado Civil:{cliente1.EstadoCivil}\nProfissão:{cliente1.Profissao}");
+            Console.WriteLine($"Nome: {cliente1.Nome} \nCPF: {cliente1.CPF}\n Data NAscimento:{cliente1.DataNasc}\nEstado Civil:{cliente1.EstadoCivil}\nProfissão:{cliente1.Profissao}");
 
         }
     }
