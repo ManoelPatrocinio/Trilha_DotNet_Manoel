@@ -84,39 +84,39 @@ namespace Application
     {
         static void Main(string[] args)
         {
+            List<Advogado> listAdvogados = new();
+            List<Cliente> listCliente = new();
 
-            try
-            {
-                Advogado advogado1 = new Advogado("Manoel", DateTime.Parse("1999/07/19"), "00000000001", "0938595");
-                Advogado advogado2 = new Advogado("Luiza", DateTime.Parse("1975/07/19"), "00000000002", "309430");
+            Advogado advogado1 = new Advogado("Manoel", DateTime.Parse("1999/07/19"), "00000000001", "0938595");
+            Advogado advogado2 = new Advogado("Luiza", DateTime.Parse("1975/07/19"), "00000000002", "309430");
 
-                Cliente cliente1 = new Cliente("Sandra", DateTime.Parse("2002/10/20"), "00000000003", "solteiro", "gamer");
-                Cliente cliente2 = new Cliente("Pedro", DateTime.Parse("1972/10/20"), "00000000004", "casado", "reporter");
+            Cliente cliente1 = new Cliente("Sandra", DateTime.Parse("2002/10/20"), "00000000003", "solteiro", "gamer");
+            Cliente cliente2 = new Cliente("Pedro", DateTime.Parse("1972/10/20"), "00000000004", "casado", "reporter");
 
-            }
-            catch (System.Exception)
-            {
-                Console.WriteLine("\n\nVocê informou um valor  inválido !\n");
-                return;
-            }
 
-            List<Advogado> listAdvogados;
-            List<Cliente> listCliente;
+
+
+
 
             listAdvogados.Add(advogado1);
             listAdvogados.Add(advogado2);
 
             listCliente.Add(cliente1);
-            listCliente.Add(cliente1);
+            listCliente.Add(cliente2);
 
+            Console.WriteLine("\n\n---Lista de Advogados ---\n\n");
             foreach (var advogado in listAdvogados)
             {
 
-                ($"Nome: {advogado.Nome} \n tm: {advogado.CPF.Length}CPF: {advogado.CPF}\nCNA:{advogado.CNA}\n Data NAscimento:{advogado.DataNasc}");
+                Console.WriteLine($"Nome: {advogado.Nome} \nCPF: {advogado.CPF}\nCNA:{advogado.CNA}\nData NAscimento:{advogado.DataNasc} \n\n");
             }
-            foreach (var cliente in listClient){
 
-                Console.WriteLine($"Nome: {cliente.Nome} \nCPF: {cliente.CPF}\n Data NAscimento:{cliente.DataNasc}\nEstado Civil:{cliente.EstadoCivil}\nProfissão:{cliente.Profissao}");
+            Console.WriteLine("\n\n---Lista de Clientes ---\n\n");
+
+            foreach (var cliente in listCliente)
+            {
+
+                Console.WriteLine($"Nome: {cliente.Nome} \nCPF: {cliente.CPF}\nData NAscimento:{cliente.DataNasc}\nEstado Civil:{cliente.EstadoCivil}\nProfissão:{cliente.Profissao} \n\n");
             }
 
         }
